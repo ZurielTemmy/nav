@@ -2,58 +2,40 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
-.hero {
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(this.png);
-    background-size: cover;
-    background-position: center;
-}
-nav {
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    align-items: center;
+    background: black;
+    color: white;
 }
 .logo {
-    color: white;
-    font-size: 28px;
+    font-size: 40px;
+    margin: 10px;
 }
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-
+.links ul {
+    display: flex;
 }
-nav ul li a {
-    color: white;
+.links ul li {
+    list-style: none;
+    margin-right: 25px;
+    transition: 1s;
+}
+.links ul li a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-nav ul li a:hover {
     color: grey;
-    transition: .3s;
     background: white;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 6px;
+    border-bottom-right-radius: 5px;
+    transition: 1s;
 }
-button {
-    border: none;
-    background: red;
-    padding: 12px 30px;
-    color: #fff;
-    border-radius: 30px;
-    text-transform: capitalize;
-    font-weight: bold;
-    transition: .4s;
-    font-size: 15px;
+.links ul li a:hover {
+    color: white;
+    background: grey;
+    border-top-left-radius: 5px;
+    
 }
-button:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+.links ul li:hover {
+    transform: scale(1.3);
 }
